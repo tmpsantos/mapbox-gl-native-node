@@ -1,0 +1,24 @@
+{
+  "name": "@mapbox/mapbox-gl-native",
+  "version": "5.0.0",
+  "description": "Renders map tiles with Mapbox GL",
+  "keywords": [
+    "mapbox",
+    "gl"
+  ],
+  "main": "platform/node/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mapbox/mapbox-gl-native.git"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@mapbox/cmake-node-module": "^1.2.0",
+    "minimatch": "^3.0.4",
+    "node-pre-gyp": "^0.10.2",
+    "npm-run-all": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
