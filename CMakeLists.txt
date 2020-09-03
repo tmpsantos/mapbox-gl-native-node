@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18.2 FATAL_ERROR)
 project("Mapbox GL Native Node Bindings" LANGUAGES CXX)
 
 cmake_policy(SET CMP0063 NEW)
@@ -23,14 +23,13 @@ include(${PROJECT_SOURCE_DIR}/node_modules/@mapbox/cmake-node-module/module.cmak
 add_node_module(
     mbgl-node
     INSTALL_PATH ${PROJECT_SOURCE_DIR}/lib/{node_abi}/mbgl.node
-    NAN_VERSION 2.9.2
+    NAN_VERSION 2.14.0
     EXCLUDE_NODE_ABIS
         46
         47
         48
         51
         59
-        72
         79
         83
 )
